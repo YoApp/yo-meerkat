@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div id="outPopUp">
+    <div id="bg-bottom"></div>
+    <br>
+    <h1><a target="_blank" href="http://justyo.co">Yo</a> <a target="_blank" href="http://meerkatapp.co">Meerkat</a> </h1>
+    <h5>Get a Yo with the live stream when your friends on twitter start a Meerkat</h5>
+    <form id="form" role="form" action="authorize">
+        <input type="text" id="yo_username" name="yo_username" class="textbox" placeholder="Enter your Yo username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Yo username'" style="text-transform:uppercase">
+        <button type="submit" class="css_button_4">Connect!</button>
+    </form>
+  </div>
+{% endblock %}
